@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="org.felipe2604.notas" version="1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
+    <feature name="GooglePlus">
+        <param name="onload" value="true" />
+    </feature>
+    <access origin="https://accounts.google.com/*" />
+    <name>Control de Viñedo</name>
+    <description>
+      Gestión de Hectómetros cúbicos
+    </description>
+    <author email="" href="">
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+</widget>

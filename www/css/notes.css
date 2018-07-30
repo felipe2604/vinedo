@@ -1,0 +1,81 @@
+body {
+  background: lightgreen;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+  }
+
+.notes-list-container {
+  padding: 10px;
+}
+
+.notes-list {
+  margin-bottom: 10px;
+}
+
+.anadirhtml {
+    display: none;
+}
+
+.note-item {
+  margin-top: 2px;
+  background: yellow;
+  border: 1px solid black;
+}
+
+.note-editor {
+  display: none;
+  padding: 10px;
+}
+
+.wifi {
+  display: none;
+  /*padding:5px;
+  font-size:small;*/
+  text-align: center;
+}
+.datos {
+  display: none;
+/*  padding:5px;
+  font-size:small;*/
+  text-align: center;
+}
+
+.titulo {
+  width: 100%;
+}
+
+.comentario{
+  width: 100%;
+}
+.fecha{
+  width: 100%;
+}
+.borrar{
+background: red;
+  float: right;
+}
+.borrartodo{
+  background-color: green;
+    float: right;
+  
+}
+
+.footer {
+  padding:5px;
+  font-style:italic;
+  font-size:small;
+  text-align: center;
+}
+
+.header {
+  padding: 0 10px;
+  color: #666;
+  text-align: center;
+  height: 15%;
+  line-height: 48.4px;
+}

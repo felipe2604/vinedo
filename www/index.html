@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+  <link rel="stylesheet" type="text/css" href="css/notes.css" />
+  <link rel="stylesheet" href="css/material.min.css">
+  <script src="js/material.min.js"></script>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+  <!-- <script src="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.css" />
+  <script src="https://www.gstatic.com/firebasejs/ui/3.1.1/firebase-ui-auth__es.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/3.1.1/firebase-ui-auth.css" /> -->
+
+  <title>Control de Viñedo</title>
+</head>
+
+<body>
+  
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo"><img src="images/cepa.jpg" alt="Cepa" width="20%" height="20%"> Hectómetros</a>
+    </div>
+  </nav>
+
+  <!--div class="header"-->
+  <div class="header">
+    <div class="brand-logo">Aplicación de gestión de hectómetros cúbicos consumidos</div>
+      
+  </div>
+
+  <div class="notes-list-container">
+    
+    <div class="notes-list" id="notes-list"></div>
+
+    <div class="anadirhtml" id="anadirhtml"></div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col s6">
+      <button class="waves-effect waves-light btn-large" id="anadir">Añadir nueva medición</button>
+        </div>
+        <div class="col s6">
+      <button class="waves-effect waves-light btn-large" id="borrarTodo">Borrar todo</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+  <div class="note-editor" id="note-editor">
+    Añadir Nueva Medición:<br>
+    Fecha:
+    <input clas="fecha" type="date" name="fecha" id="fecha" placeholder="Fecha"/>
+    <br>
+    Hectómetros cúbicos:
+    <input class="hectometros" type="text" name="hectometros" id="hectometros" placeholder="Hectómetros" required />
+    <br>
+    Comentario (opcional):
+    <textarea class="comentario" name="comentario" id="comentario" placeholder="Añadir comentario"></textarea>
+    <br>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col s6" align="center">
+          <button class="waves-effect waves-light btn-large" id="salvar">Salvar</button>
+        </div>
+        <div class="col s6" align="center">
+          <button class="waves-effect waves-light btn-large" id="ocultar">Ocultar</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  
+  
+        
+        <div class="card-panel teal">
+          <div class="wifi" id="wifi">
+            Usted está SIN WIFI.
+          </div>
+          <div class="wifi" id="siWifi">
+            Usted está CON WIFI.
+          </div>
+          <div class="datos" id="datos">
+            Usted está SIN DATOS.
+          </div>
+        </div>
+        <!--div class="pie" id="pie">
+          <h4></h4>
+        </div-->
+
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="js/fastclick.js"></script>
+  <script type="text/javascript" src="js/firebase.js"></script>
+  <script type="text/javascript" src="js/notes.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+        
+  <!--footer class="footer">
+    <h4>App para recoger la cantidad de hectómetros cúbicos sacados del pozo.</h4>
+  </footer-->
+
+        <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Hectómetros</h5>
+                <p class="grey-text text-lighten-4">App para recoger la cantidad de hectómetros cúbicos sacados del pozo.</p>
+              </div>
+              <!--div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div-->
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2018 Copyright Felipe Pérez Sánchez
+            <!--a class="grey-text text-lighten-4 right" href="#!">More Links</a-->
+            </div>
+          </div>
+        </footer>
+
+</body>
+
+</html>
