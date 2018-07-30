@@ -1,0 +1,19 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "org.felipe2604.notas"
+        },
+        "cordova-plugin-googleplus": {
+            "WEB_APPLICATION_CLIENT_ID": "mywebapplicationclientid",
+            "PACKAGE_NAME": "org.felipe2604.notas"
+        }
+    },
+    "dependent_plugins": {}
+}
