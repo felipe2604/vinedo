@@ -127,6 +127,7 @@ var app = {
     return "<div class='card-panel teal'>"+totalmediciones+" Mediciones tomadas. Total de los hectometros cúbicos consumidos: <b>" + totalhecto +" Hc<sup>3</sup></b>, total en litros de agua: <b>" + totalhecto*1000 + " litros.</b></div>";//"<div class='note-item'" + totalhecto+"</div>";
   },
 
+
   formatof: function(texto){
     return texto.replace(/^(\d{4})-(\d{2})-(\d{2})$/g,'$3/$2/$1');
   },
@@ -161,6 +162,7 @@ var app = {
     //ref.putString(JSON.stringify(app.model));
     ref.putString(JSON.stringify(app.model)).then(function(snapshot) {
        console.log('Subido a firebase');
+    
     }).catch(app.fail);
   },
 
@@ -172,7 +174,7 @@ var app = {
   },
 
   leerDatos: function() {
-    if (app.hayWifi()) {
+    if (app.hayWifi() || app.hayDatos()) {
       app.iniciaFirebase();
       var ref = firebase.storage().ref('hectometros.json');
       ref.getDownloadURL().then(function(url) {
@@ -249,3 +251,5 @@ if ('addEventListener' in document) {
     app.leerDatos();
   }, false);
 };
+
+
