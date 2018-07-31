@@ -11,4 +11,11 @@
     <plugin name="cordova-plugin-file" source="npm" spec="~4.1.1" />
     <platform name="android" />
     <access origin="*" />
+    
+    <!-- Fullscreen allows you to hide the status bar at the top of the screen. The default value is false. Example: -->
+    <preference name="Fullscreen" value="true" />
+
+
+    <icon src="images/cepa1.png" />
+
 </widget>
