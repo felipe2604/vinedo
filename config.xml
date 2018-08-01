@@ -13,7 +13,7 @@
     <access origin="*" />
     
     <!-- Fullscreen allows you to hide the status bar at the top of the screen. The default value is false. Example: -->
-    <preference name="Fullscreen" value="false" />
+    <!--preference name="Fullscreen" value="true" /-->
 
 
     <icon src="images/cepa1.png" />
