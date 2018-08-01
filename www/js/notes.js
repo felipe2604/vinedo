@@ -57,6 +57,8 @@ var app = {
       if(!app.hayDatos()) {
         document.getElementById("datos").style.display = "block";
       }
+    }else if(app.hayDatos()){
+        document.getElementById("siDatos").style.display = "block";
     } 
   },
 
@@ -94,7 +96,6 @@ var app = {
     
     div.innerHTML = this.anadirhectometrosALista();
     div2.innerHTML = this.anadirhtml();
-
   },
 
   anadirhectometrosALista: function() {
@@ -252,4 +253,13 @@ if ('addEventListener' in document) {
   }, false);
 };
 
-
+function ocultar(){
+  document.getElementById("anadir").style.display = "none";
+  document.getElementById("borrarTodo").style.display = "none";
+  //console.log("funcion ocultar botones")
+};
+function mostrar(){
+  document.getElementById("anadir").style.display = "block";
+  document.getElementById("borrarTodo").style.display = "block";
+  //console.log("funcion mostrar botones")
+};

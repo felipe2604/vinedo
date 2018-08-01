@@ -52,23 +52,23 @@
 
   <div class="notes-list-container">
     
-    <div class="notes-list" id="notes-list"></div>
+      <div class="notes-list" id="notes-list"></div>
 
-    <div class="anadirhtml" id="anadirhtml"></div>
+      <div class="anadirhtml" id="anadirhtml"></div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col s6">
-      <button class="waves-effect waves-light btn-large" id="anadir">Añadir nueva </button>
-        </div>
-        <div class="col s6">
-      <button class="waves-effect waves-light btn-large" id="borrarTodo">Borrar todo</button>
+      <div class="container">
+        <div class="row">
+          <div class="col s6">
+        <button class="waves-effect waves-light btn-large" id="anadir" onclick="ocultar()">Añadir nueva </button>
+          </div>
+          <div class="col s6">
+        <button class="waves-effect waves-light btn-large" id="borrarTodo">Borrar todo</button>
+          </div>
         </div>
       </div>
-    </div>
   </div>
     
-  <div class="note-editor" id="note-editor" style="position:absolute; top:10; left:10; background-color:lightgreen">
+  <div class="note-editor" id="note-editor" style="position:absolute; top:10; left:10; background-color:green">
     Añadir Nueva Medición:<br><br>
     Fecha:<br>
     <input clas="fecha" type="date" name="fecha" id="fecha" placeholder="Fecha"/>
@@ -83,10 +83,10 @@
     <div class="container">
       <div class="row">
         <div class="col s6" align="center">
-          <button class="waves-effect waves-light btn-large" id="salvar">Salvar</button>
+          <button class="waves-effect waves-light btn-large" id="salvar" onclick="mostrar()">Salvar</button>
         </div>
         <div class="col s6" align="center">
-          <button class="waves-effect waves-light btn-large" id="ocultar">Ocultar</button>
+          <button class="waves-effect waves-light btn-large" id="ocultar" onclick="mostrar()">Ocultar</button>
         </div>
       </div>
     </div>
@@ -117,6 +117,9 @@
       </div>
       <div class="datos" id="datos">
         Usted está SIN DATOS.
+      </div>
+      <div class="datos" id="siDatos">
+        Usted está CON DATOS.
       </div>
     </div>
 
